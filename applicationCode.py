@@ -83,12 +83,8 @@ class ddsWriter:
     trackData_data = DDS.Tracking.TrackData
     trackData_data.ObjectID = 111 
     trackData_data.Coordinates = "51.241 -2.141"
-    cartesianStruct = DDS.SILKTypes.CartesianCoordinates
-    cartesianStruct.x = 51.213
-    cartesianStruct.y = -2.141
-    cartesianStruct.z = 213.12
-    trackData_data.CartesianCoordinates = cartesianStruct
-
+    
+    
     #IFFRequest
     IFFRequest_data = DDS.IFF.IFFRequest
     IFFRequest_data.RequestID = 1
