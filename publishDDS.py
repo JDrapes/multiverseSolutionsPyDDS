@@ -6,7 +6,7 @@ from interfaces import DDS
 class ddsWriter:
 
     #Participant
-    participant = dds.DomainParticipant(domain_id=0)
+    participant = dds.DomainParticipant(domain_id=1)
 
     #Topics
     componentHealth_topic = dds.Topic(participant, "ComponentHealth", DDS.Metrics.ComponentHealth)
@@ -109,7 +109,7 @@ class ddsWriter:
     IRSafety_data.enabled = 1
 
     #Loop data sending
-    for count in range(100):
+    for count in range(1000):
             # Catch control-C interrupt
             try:
                 #Print counter
